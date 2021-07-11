@@ -19,7 +19,8 @@ body {
   text-align: center;
   font-size: calc(4vw + 1.8rem);
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.212);
+  color: rgba(0, 0, 0, 0.247);
+  letter-spacing: 1px;
 }
 
 .all-tasks {

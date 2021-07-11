@@ -37,6 +37,7 @@ body {
 
 .new {
   background: transparent;
+  border: 0;
 }
 
 .active-task {

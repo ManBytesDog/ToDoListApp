@@ -13,3 +13,15 @@ body {
       1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
 
 }
+
+.title {
+  grid-area: header; 
+}
+
+.all-tasks {
+
+}
+
+.list {
+
+}

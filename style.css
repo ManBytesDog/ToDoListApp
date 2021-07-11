@@ -17,6 +17,7 @@ body {
 .title {
   grid-area: header; 
   text-align: center;
+  font-size: calc(7vw + 2rem);
 }
 
 .all-tasks {

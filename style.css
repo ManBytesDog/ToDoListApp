@@ -28,6 +28,10 @@ body {
   grid-area: lists; 
 }
 
+.task-list {
+  line-height: 1.7;
+}
+
 .list {
   grid-area: active;
 }

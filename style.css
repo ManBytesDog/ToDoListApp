@@ -19,9 +19,9 @@ body {
 }
 
 .all-tasks {
-
+  grid-area: lists; 
 }
 
 .list {
-
+  grid-area: active;
 }

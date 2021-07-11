@@ -16,6 +16,7 @@ body {
 
 .title {
   grid-area: header; 
+  text-align: center;
 }
 
 .all-tasks {

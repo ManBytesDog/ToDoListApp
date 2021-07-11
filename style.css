@@ -38,6 +38,7 @@ body {
 .new {
   background: transparent;
   border: 0;
+  border-bottom: 1px solid currentColor;
 }
 
 .active-task {

@@ -39,6 +39,7 @@ body {
 ::placeholder {
   color: inherit;
   font-size: 1.1rem;
+  opacity: 0.5;
 }
 
 .new {
@@ -49,11 +50,11 @@ body {
   font-size: inherit;
   outline: none;
 
-  transition: border-bottom 250ms ease-in;
+  transition: border-bottom 160ms ease-in;
 }
 
 .new:focus {
-  border-bottom-width: 3px;
+  border-bottom-width: 3.2px;
 }
 
 .active-task {

@@ -51,10 +51,15 @@ body {
   outline: none;
 
   transition: border-bottom 160ms ease-in;
+  order: 2;
 }
 
 .new:focus {
   border-bottom-width: 3.2px;
+}
+
+.new:focus::placeholder {
+  opacity: 0.3;
 }
 
 .active-task {

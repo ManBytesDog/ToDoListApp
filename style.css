@@ -40,6 +40,11 @@ form {
   display: flex; 
 }
 
+.btn {
+  cursor: pointer;
+  background: 0;
+}
+
 ::placeholder {
   color: inherit;
   font-size: 1.1rem;
@@ -64,6 +69,10 @@ form {
 
 .new:focus::placeholder {
   opacity: 0.3;
+}
+
+.new.list {
+  font-size: 1.1rem;
 }
 
 .active-task {

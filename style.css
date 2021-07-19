@@ -43,6 +43,8 @@ form {
 .btn {
   cursor: pointer;
   background: 0;
+  padding: 0; 
+  
 }
 
 ::placeholder {

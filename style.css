@@ -44,6 +44,7 @@ form {
   cursor: pointer;
   background: 0;
   padding: 0; 
+  color: inherit;
   
 }
 

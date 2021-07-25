@@ -46,7 +46,11 @@ form {
   border: 0;
   padding: 0; 
   color: inherit;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+}
+
+.btn.list {
+  font-size: 1.5rem;
 }
 
 ::placeholder {
@@ -84,6 +88,6 @@ form {
   letter-spacing: 0.5px;
 }
 
-.list {
+.todo-list {
   grid-area: active;
 }

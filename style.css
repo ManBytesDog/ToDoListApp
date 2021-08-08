@@ -123,6 +123,7 @@ form {
   background: #e4e4e4;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .list-title {

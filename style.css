@@ -114,6 +114,6 @@ form {
   --spacer: 2rem;
 
   grid-area: active;
-  background: whitesmoke;
-  color:rgba(0, 0, 0, 0.500);
+  background: var(--clr-light);
+  color: var(--clr-dark);
 }

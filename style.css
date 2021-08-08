@@ -96,6 +96,9 @@ form {
 }
 
 .todo-list {
+  --spacer: 2
+
   grid-area: active;
-  background: var(--clr-light);
+  background: whitesmoke;
+  color:rgba(0, 0, 0, 0.500);
 }

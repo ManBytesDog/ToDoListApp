@@ -122,6 +122,7 @@ form {
   padding: var(--spacer);
   background: #e4e4e4;
   display: flex;
+  align-items: center;
 }
 
 .list-title {

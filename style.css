@@ -129,6 +129,7 @@ form {
 
 .tasks-remaining{
   margin: 0;
+  font-size: 1rem;
 }
 
 .todo-body {

@@ -97,4 +97,5 @@ form {
 
 .todo-list {
   grid-area: active;
+  background: var(--clr-light);
 }

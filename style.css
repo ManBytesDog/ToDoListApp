@@ -121,6 +121,7 @@ form {
 .todo-header {
   padding: var(--spacer);
   background: #e4e4e4;
+  display: flex;
 }
 
 .list-title {

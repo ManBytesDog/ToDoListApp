@@ -130,3 +130,7 @@ form {
 .tasks-remaining{
   margin: 0;
 }
+
+.todo-body {
+  padding: var(--spacer);
+}

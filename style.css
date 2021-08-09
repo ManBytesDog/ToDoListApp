@@ -89,6 +89,16 @@ form {
   opacity: 0.5;
 }
 
+.btn.delete {
+  opacity: 0.7;
+  font-size: 1rem;
+  transition: color 200ms;
+}
+
+.btn.delete:hover {
+ color: var(--clr-warning);
+}
+
 .new {
   background: transparent;
   border: 0;
@@ -96,9 +106,14 @@ form {
   border-bottom: 1px solid currentColor;
   font-size: inherit;
   outline: none;
+  padding: 0.25em;
 
   transition: border-bottom 180ms ease-in;
   order: 2;
+}
+
+.new::placeholder {
+  opacity: 0.4;
 }
 
 .new:focus {
@@ -106,7 +121,7 @@ form {
 }
 
 .new:focus::placeholder {
-  opacity: 0.3;
+  opacity: 0.15;
 }
 
 .new.list {
@@ -149,6 +164,11 @@ form {
 
 .todo-body {
   padding: var(--spacer);
+  position: relative;
+}
+
+.new-task-creator .create {
+  color: var(--clr-primary)
 }
 
 [type="checkbox"] {
@@ -224,4 +244,15 @@ form {
 [type="checkbox"]:checked + label::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.delete-stuff {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -35px;
+  color: var(--clr-light);
+
 }

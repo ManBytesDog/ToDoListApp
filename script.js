@@ -14,7 +14,12 @@ newListForm.addEventListener('submit', event => {
 	event.preventDefault()
 	const listName = newListInput.value
 	if (listName == null || listName === '') return
+	const list = createList(listName)
 })
+
+function createList(name) {
+	return { id: Date.now().toString(), name: name, tasks: [] }
+}
 
 function render() {
   clearElement(listsContainer)

@@ -12,6 +12,8 @@ let lists = [{
 
 newListForm.addEventListener('submit', event => {
 	event.preventDefault()
+	const listName = newListInput.value
+	if (listName == null || listName === '') return
 })
 
 function render() {

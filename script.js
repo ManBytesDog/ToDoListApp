@@ -1,6 +1,6 @@
 const listsContainer = document.querySelector('[data-lists]')
 const newListForm = document.querySelector('[data-new-list-form]')
-const newListInput = document.querySelector('[data-new-list-input}')
+const newListInput = document.querySelector('[data-new-list-input]')
 
 let lists = [{
 	id: 1,
@@ -9,6 +9,10 @@ let lists = [{
 	id: 2,
 	name: "todo"
 }]
+
+newListForm.addEventListener('submit', event => {
+	event.preventDefault()
+})
 
 function render() {
   clearElement(listsContainer)

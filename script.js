@@ -12,11 +12,16 @@ newListForm.addEventListener('submit', event => {
 	const list = createList(listName)
 	newListInput.value = null 
 	lists.push(list)
-	render()
+	saveAndRender()
 })
 
 function createList(name) {
 	return { id: Date.now().toString(), name: name, tasks: [] }
+}
+
+function saveAndRender() {
+	save()
+	render()
 }
 
 function save() {

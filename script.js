@@ -34,8 +34,8 @@ function render() {
   clearElement(listsContainer)
   lists.forEach(list => {
     const listElement = document.createElement('li')
-		listElement.dataset.listId = list.id
-    listElement.classList.add = 'list-name'
+	listElement.dataset.listId = list.id
+    listElement.classList.add('list-name')
     listElement.innerText = list.name
 		if (list.id === selectedListId) {
 			listElement.classList.add('active-list')

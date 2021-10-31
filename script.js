@@ -15,6 +15,12 @@ listsContainer.addEventListener('click', event => {
 	}
 })
 
+deleteListButton.addEventListener('click', event => {
+	lists = lists.filter(list => list.id !== selectedListId)
+	selectedListId = null
+	saveAndRender()
+})
+
 newListForm.addEventListener('submit', event => {
 	event.preventDefault()
 	const listName = newListInput.value

@@ -5,6 +5,7 @@ const deleteListButton = document.querySelector('[data-delete-list-button]')
 const listDisplayContainer = document.querySelector('[data-list-display-container]')
 const listTitleElement = document.querySelector('[data-list-title]')
 const listRemainingElement = document.querySelector('[data-list-remaining]')
+const tasksContainer = document.querySelector('[data-tasks]')
 
 const LOCAL_STORAGE_LIST_KEY = 'task.lists'
 const LOCAL_STORAGE_SELECTED_LIST_ID_KEY = 'task.selectedListId'

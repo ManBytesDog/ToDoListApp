@@ -51,6 +51,7 @@ function save() {
 
 function render() {
   clearElement(listsContainer)
+	renderLists()
   
 }
 

@@ -52,6 +52,12 @@ function save() {
 function render() {
   clearElement(listsContainer)
 	renderLists()
+
+	if (selectedListId == null ) {
+		listDisplayContainer.style.display = 'none'
+	} else {
+		listDisplayContainer.style.display = ''
+	}
   
 }
 

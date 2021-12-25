@@ -22,6 +22,16 @@ listsContainer.addEventListener('click', event => {
 	}
 })
 
+tasksContainer.addEventListener('click', event => {
+	if (event.target.tagName.toLowerCase() === 'input') {
+		const selectedList = lists.find(list => list.id === selectedListId)
+		const selectedTask = selectedList.tasks.find(task => task.id === event.target.id)
+		selectedTask.complete = event.target.checked
+		save()
+		renderTaskCount(selectedList)
+	}
+})
+
 deleteListButton.addEventListener('click', event => {
 	lists = lists.filter(list => list.id !== selectedListId)
 	selectedListId = null

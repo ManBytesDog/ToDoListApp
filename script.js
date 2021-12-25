@@ -60,6 +60,7 @@ function render() {
 		listDisplayContainer.style.display = ''
 		listTitleElement.innerText = selectedList.name
 		renderTaskCount(selectedList)
+		clearElement(tasksContainer)
 	}
 }
 

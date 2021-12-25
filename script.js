@@ -7,6 +7,8 @@ const listTitleElement = document.querySelector('[data-list-title]')
 const listRemainingElement = document.querySelector('[data-list-remaining]')
 const tasksContainer = document.querySelector('[data-tasks]')
 const taskTemplate = document.getElementById('task-template')
+const newTaskForm = document.querySelector('[data-new-task-form]')
+const newTaskInput = document.querySelector('[data-new-task-input]')
 
 const LOCAL_STORAGE_LIST_KEY = 'task.lists'
 const LOCAL_STORAGE_SELECTED_LIST_ID_KEY = 'task.selectedListId'
@@ -36,8 +38,23 @@ newListForm.addEventListener('submit', event => {
 	saveAndRender()
 })
 
+newTaskForm.addEventListener('submit', event => {
+	event.preventDefault()
+	const taskName = newTaskInput.value
+	if (taskName == null || taskName === '') return
+	const task = createTask(taskName)
+	newTaskInput.value = null 
+	const selectedList = lists.find(list => list.id === selectedListId)
+	selectedList.tasks.push(task)
+	saveAndRender()
+})
+
 function createList(name) {
 	return { id: Date.now().toString(), name: name, tasks: [] }
+}
+
+function createTask(name) {
+	return { id: Date.now().toString(), name: name, complete: false }
 }
 
 function saveAndRender() {
